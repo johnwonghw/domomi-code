@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Multi Step Form with Progress Bar using jQuery and CSS3</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!-- multistep form -->
+<form id="msform">
+  <!-- progressbar -->
+  <ul id="progressbar">
+    <li class="active">Account Setup</li>
+    <li>General Information</li>
+    <li>Address</li>
+    <li>Rental Information</li>
+    <li>Personal Details</li>
+  </ul>
+  <!-- fieldsets -->
+  <fieldset>
+    <h2 class="fs-title">Create your account</h2>
+    <h3 class="fs-subtitle"> </h3>
+    <input type="email" name="email" placeholder="Email" />
+    <input type="password" name="pass" placeholder="Password" />
+    <input type="password" name="cpass" placeholder="Confirm Password" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Tell us a little about yourself!</h2>
+    <h3 class="fs-subtitle">This is the first step to making your rental template.</h3>
+    <input type="text" name="firstname" placeholder="First Name" />
+    <input type="text" name="lastname" placeholder="Last Name" />
+    <input type="date" name="dateofbirth" placeholder="Date of Birth" />
+    <input type="tel" name="phone" placeholder="Phone Number" />
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset>
+    <h2 class="fs-title">Address</h2>
+    <h3 class="fs-subtitle">Where do you live now?</h3>
+    <input type="text" name="address" placeholder="Address" />
+    <input type="text" name="province" placeholder="City" />
+    <input type="text" name="province" placeholder="Province" />
+    <input type="text" name"postal" placeholder="Postal Code" />
+
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset>
+    <h2 class="fs-title">Rental Information</h2>
+    <h3 class="fs-subtitle">What do you need?</h3>
+    <label for="rentee">How many people are you renting for?</label>
+    <input type="number" name="rentee" placeholder="# of rentees?" />
+    <label for="pets">Do you have any pets?</label>
+    <input class="radio" type="radio" name="pets" value="yes"> Yes</input>
+    <input class="radio" type="radio" name="pets" value="no"> No</input>
+
+    <label for="parking">How many parking spaces do you need?</label>
+    <input type="number" name="parking" placeholder="# of parking space required?" />
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset>
+    <h2 class="fs-title">Personal Details</h2>
+    <h3 class="fs-subtitle">Little details home owners may want from you.</h3>
+    <input type="text" name="occupation" placeholder="Occupation" />
+    
+    <label for="income">Income</label>
+    <select name="income">
+      <option value="0">$0 - $20,000</option>
+      <option value="20000">$20,001 - $40,000</option>
+      <option value="60000">$40,001 - $60,000</option>
+      <option value="80000">$60,001 - $80,000</option>      
+      <option value="100000">$80,001 - $100,000</option>
+    </select>
+
+    <textarea name="details" placeholder="Tell us a little about yourself that you would want the landlord to know!"></textarea>
+    <input type="button" name="preivew" value="Preview Template" />
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="submit" name="submit" class="submit action-button" value="Submit" />
+  </fieldset>
+</form>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
